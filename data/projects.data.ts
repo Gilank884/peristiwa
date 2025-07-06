@@ -15,7 +15,7 @@ export const META_PROJECTS: Lang<MetaDataProps> = {
 export const PROJECTS: Lang<Projects> = {
     en: [
         {
-            title: 'Event',
+            title: 'Event Organizer',
             description: 'An event organizer service plans and manages events, handling logistics, vendors, and schedules.',
             image: '/static/images/projects/acolyte.jpg',
             url: 'https://acolyte.ws/'
