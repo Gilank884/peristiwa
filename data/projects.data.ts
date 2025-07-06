@@ -59,7 +59,7 @@ export const PROJECTS: Lang<Projects> = {
             url: 'https://acolyte.ws/'
         },
         {
-            title: 'Web Bing',
+            title: 'Web',
             description: 'Toko perhiasan online yang dibangun dengan Shopify',
             image: '/static/images/projects/lsm.jpg',
             url: 'https://bijouterielsm.com/'
