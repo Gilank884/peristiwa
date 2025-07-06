@@ -1,0 +1,141 @@
+/* ==========================================================================
+    Mobile Navigation
+========================================================================== */
+
+@keyframes scale3d {
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.c-mobileNav {
+    --navigation-link-color: var(--navigation-mobile-item-color);
+    --navigation-primary-padding: 100px;
+    --li-line-width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background-color);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    pointer-events: none;
+    z-index: 999;
+    overflow: hidden auto;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        padding: var(--navigation-height) var(--container-padding) 38px;
+        min-height: 100%;
+    }
+
+    &__nav {
+        padding: var(--navigation-primary-padding) 0 0 0;
+        margin-top: auto;
+        width: 100%;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+                padding: 0;
+                margin: 0;
+                line-height: 0.875;
+
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+
+                span {
+                    display: inline-block;
+                    overflow: hidden;
+
+                    a {
+                        display: inline-block;
+                        font-size: 50px;
+                        color: var(--navigation-link-color);
+                        text-transform: uppercase;
+                    }
+                }
+
+                &:has(.is-current-page) {
+                    position: relative;
+                    margin-bottom: 7px;
+
+                    &:not(:last-child) {
+                        margin-bottom: 22px;
+                    }
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: calc(100% + 2px);
+                        left: 0;
+                        width: var(--li-line-width);
+                        height: 5px;
+                        background: var(--navigation-link-color);
+                        transform-origin: left;
+                    }
+                }
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: 30px;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                padding: 0;
+                margin: 0;
+
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+
+                a {
+                    display: inline-block;
+                    color: var(--navigation-link-color);
+                    transition: none;
+                }
+            }
+        }
+
+        &--language {
+            margin-top: 30px;
+
+            a {
+                display: inline-block;
+                color: var(--navigation-link-color);
+                text-transform: uppercase;
+                transition: none;
+            }
+        }
+    }
+
+    /* States */
+    &.is-open {
+        pointer-events: all;
+    }
+
+    // **---------------------------------------------------**
+    // MEDIA QUERIES
+
+    @include mediaq('>MD') {
+        display: none;
+    }
+}

@@ -1,0 +1,37 @@
+/* ==========================================================================
+    Form Textarea
+========================================================================== */
+
+.c-formElement {
+    @include default-styles();
+	@include input-placeholder(inherit, inherit, var(--body-text-color));
+    @include floating-label();
+
+	&--bordered {
+        @include bordered-styles();
+
+        textarea {
+            background: none;
+            border: none;
+            font-size: var(--font-base);
+            color: var(--body-text-color);
+            height: auto;
+            max-width: 100%;
+            outline: none;
+            width: 100%;
+			padding: var(--form-element-padding);
+			min-height: 200px;
+		}
+
+		/* Colored line on focus */
+		textarea:focus ~ .c-formElement--focusLine {
+			border-color: var(--form-element-color);
+		}
+
+        /* Floating label */
+        textarea:focus ~ label, :not(:placeholder-shown) ~ label {
+            @include font-size(10px);
+            top: calc((var(--form-element-padding) + 5px) * -1);
+        }
+	}
+}

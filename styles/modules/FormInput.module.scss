@@ -1,0 +1,31 @@
+/* ==========================================================================
+    Form Input
+========================================================================== */
+
+.c-formElement {
+    @include default-styles();
+    @include floating-label();
+
+    &:not(.c-formElement--upload--boxed, .c-formElement--upload--bordered, .c-formElement--upload--line) {
+        @include input-placeholder(inherit, inherit, var(--body-text-color));
+
+        input {
+            @include input-reset();
+        }
+    }
+
+	&--bordered {
+        @include bordered-styles();
+
+		/* Colored line on focus */
+		input:focus ~ .c-formElement--focusLine {
+			border-color: var(--form-element-color);
+		}
+
+        /* Floating label */
+        input:focus ~ label, :not(:placeholder-shown) ~ label {
+            @include font-size(10px);
+            top: calc((var(--form-element-padding) + 5px) * -1);
+        }
+	}
+}
