@@ -53,7 +53,7 @@ export const PROJECTS: Lang<Projects> = {
     ],
     id: [
         {
-            title: 'Acolyte',
+            title: 'Event Organizer',
             description: 'Agensi pemasaran di Trois‑Rivières yang mendukung merek, konten, dan aksi Anda di web dan media',
             image: '/static/images/projects/acolyte.jpg',
             url: 'https://acolyte.ws/'
@@ -201,13 +201,13 @@ export const TOTAL_PERSONAL_PROJECTS = {
 export const PROJECTS_TABS: Lang<ProjectsTabsType> = {
     en: [
         {
-            title: 'Work',
+            title: 'Services',
             description: "A selected set of service I've built on our teams in the last few years.",
             type: ProjectsType.PROJECTS,
             total: toTwoDigits(TOTAL_PROJECTS['en'])
         },
         {
-            title: 'Personal',
+            title: 'Portofolio',
             description: "A selected set of personal projects I'm building as I navigate through ideas and technologies.",
             type: ProjectsType.PERSONAL_PROJECTS,
             total: toTwoDigits(TOTAL_PERSONAL_PROJECTS['en'])
@@ -215,13 +215,13 @@ export const PROJECTS_TABS: Lang<ProjectsTabsType> = {
     ],
     id: [
         {
-            title: 'Pekerjaan',
+            title: 'Servis',
             description: 'Beberapa proyek pilihan yang saya buat sendiri atau bersama tim dalam beberapa tahun terakhir.',
             type: ProjectsType.PROJECTS,
             total: toTwoDigits(TOTAL_PROJECTS['id'])
         },
         {
-            title: 'Pribadi',
+            title: 'Portofolio',
             description: 'Beberapa proyek pribadi pilihan yang saya buat sambil menjelajahi ide dan teknologi.',
             type: ProjectsType.PERSONAL_PROJECTS,
             total: toTwoDigits(TOTAL_PERSONAL_PROJECTS['id'])

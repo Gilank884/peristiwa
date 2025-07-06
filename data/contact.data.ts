@@ -13,10 +13,10 @@ export const META_CONTACT: Lang<MetaDataProps> = {
 export const CONTACT_HEADER: Lang<BasicHeaderProps> = {
     en: {
         title: 'Contact',
-        content: 'Is there something on your mind you\'d like to talk about? Whether it\'s related to work, just a casual conversation or need help with some code. Feel free to contact me at anytime.'
+        content: 'We at Peristiwa Agency are ready to bring your ideas and projects to life. Feel free to reach out for discussions, collaborations, or any inquiries.'
     },
     id: {
         title: 'Contact',
-        content: 'Il y a quelque chose qui vous préoccupe et dont vous aimeriez parler ? Que ce soit dans le cadre du travail, d\'une conversation informelle ou besoin d\'aide avec du code. N\'hésitez pas à me contacter à tout moment.'
+        content: 'Kami di Peristiwa Agency siap membantu mewujudkan ide dan proyek Anda menjadi kenyataan. Jangan ragu untuk menghubungi kami untuk diskusi, kolaborasi, atau pertanyaan lebih lanjut.'
     }
 };
