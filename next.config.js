@@ -1,34 +1,39 @@
 /** @type {import('next').NextConfig} */
-const withTranslateRoutes = require('next-translate-routes/plugin');
+const { withTranslateRoutes } = require('next-translate-routes/plugin');
 
-const nextConfig = withTranslateRoutes({
+const nextConfig = {
   reactStrictMode: true,
+
+  // Konfigurasi i18n
   i18n: {
     locales: ['en', 'id'],
-    defaultLocale: 'en'
+    defaultLocale: 'en',
   },
+
+  // Konfigurasi translateRoutes
   translateRoutes: {
     debug: false,
     fallbackLng: {
-      default: ['en']
-    }
+      default: ['en'],
+    },
   },
+
+  // Konfigurasi SASS
   sassOptions: {
     additionalData: `
-      @import
-      'styles/settings/_config.scss',
-      'styles/settings/_config.colors.scss',
-      'styles/settings/_config.eases.scss',
-      'styles/settings/_config.typography.scss',
-      'styles/tools/mixins/_button.scss',
-      'styles/tools/mixins/_container.scss',
-      'styles/tools/mixins/_grid.scss',
-      'styles/tools/mixins/_form.scss',
-      'styles/tools/mixins/_typography.scss',
-      'styles/tools/_functions.scss',
-      'styles/objects/_mediaq.scss';
-    `
-  }
-});
+      @import "styles/settings/_config.scss";
+      @import "styles/settings/_config.colors.scss";
+      @import "styles/settings/_config.eases.scss";
+      @import "styles/settings/_config.typography.scss";
+      @import "styles/tools/mixins/_button.scss";
+      @import "styles/tools/mixins/_container.scss";
+      @import "styles/tools/mixins/_grid.scss";
+      @import "styles/tools/mixins/_form.scss";
+      @import "styles/tools/mixins/_typography.scss";
+      @import "styles/tools/_functions.scss";
+      @import "styles/objects/_mediaq.scss";
+    `,
+  },
+};
 
-module.exports = nextConfig;
+module.exports = withTranslateRoutes(nextConfig);
