@@ -12,7 +12,7 @@ const data = createNtrData(
 global.__NEXT_TRANSLATE_ROUTES_DATA = data;
 
 module.exports = {
-    siteUrl: process.env.NEXT_PUBLIC_BASE_URL || 'https://example.com',
+    siteUrl: process.env.NEXT_PUBLIC_BASE_URL || 'https://peristiwa-creative.netlify.app',
     exclude: ['/api', '/404', '/fr/404'],
     generateIndexSitemap: false,
     generateRobotsTxt: true,
