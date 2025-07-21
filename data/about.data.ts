@@ -13,12 +13,12 @@ export const META_ABOUT: Lang<MetaDataProps> = {
 
 export const ABOUT_HEADER: Lang<AboutHeaderProps> = {
     en: {
-        titles: ['Passionate', 'Front-end', 'Developer'],
-        image: '/static/images/about-header.jpg'
+        titles: ['Peristiwa', 'Creative', 'Agency'],
+        image: '/static/images/header.jpg'
     },
     id: {
-        titles: ['Peristiwa', 'Agency', 'Company'],
-        image: '/static/images/about-header.jpg'
+        titles: ['Peristiwa', 'Kreatif', 'Agensi'],
+        image: '/static/images/header.jpg'
     }
 };
 
