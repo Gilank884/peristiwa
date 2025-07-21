@@ -24,8 +24,8 @@ export const HOME_HEADER: Lang<HomeHeaderProps> = {
 export const HOME_INTRODUCTION: Lang<HomeIntroductionContent> = {
     en: {
         titles: [
-            'Passionate about web technologies, I have always been excited about the entire development spectrum. Front-end addicted and frequently engage in backend.',
-            'When I\'m not coding or exploring new web technologies, I am playing video games or watching the latest movies and tv shows released.'
+            '',
+            ''
         ],
         content: [
             'Over the years I have spent time converting designs into pixel-perfect, performant, accessible and responsive applications/websites. Each project is an opportunity to learn new concepts across multiple domains.',

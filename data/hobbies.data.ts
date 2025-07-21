@@ -33,12 +33,12 @@ export const HOBBIES_TABS: Lang<HobbiesTabsContent> = {
         tabs: [
             {
                 id: 0,
-                title: 'Jeux',
+                title: 'Event',
                 description: 'Je joue à beaucoup de jeux vidéo, mais j\'aime surtout les jeux de tir à la première personne, les jeux de survie et les jeux de rôle. Récemment, j\'ai joué à des jeux comme Call of Duty, DayZ, la série des Dark Souls et Elden Ring.'
             },
             {
                 id: 1,
-                title: 'Musique',
+                title: 'Branding',
                 description: 'J\'écoute un large éventail de genres, mais mes préférés sont la musique lo-fi, alternative/indie et la musique pop. J\'aime particulièrement écouter de la musique en codant ou pendant les trajets en voiture.'
             },
             {
