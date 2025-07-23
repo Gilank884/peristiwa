@@ -1,1 +1,1 @@
-Lank Tyoooo# peristiwa
+NOPE
