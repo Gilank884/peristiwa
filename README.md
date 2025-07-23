@@ -1,2 +1,1 @@
 Lank Tyoooo# peristiwa
-Distraction
